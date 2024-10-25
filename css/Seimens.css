@@ -72,14 +72,10 @@ nav ul li a:hover {
   font-size: 3em;
   margin-bottom: 15px;
 }
-.main-container h4 {
-  font-size: 1em;
-  margin-bottom: 20px;
-  font-style: italic;
-}
 .main-container p {
   font-size: 1.2em;
   margin-bottom: 20px;
+  width: 70%;
 }
 
 .title {
@@ -97,8 +93,6 @@ nav ul li a:hover {
     flex: 1;
     display: flex;
     justify-content: center;
-
-
 }
 .image-content img {
     width: 70%;
@@ -107,7 +101,8 @@ nav ul li a:hover {
 }
 .container {
   display: flex;
-  padding: 20px;
+  padding: 30px;
+  padding-right: 10px;
 }
 .content {
     flex: 1;
@@ -121,5 +116,5 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 15px;
 }
