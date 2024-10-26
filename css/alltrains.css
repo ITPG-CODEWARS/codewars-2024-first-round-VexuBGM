@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-img {
+  height: 80px; 
+  width: auto; /* around 137px */
+}
+ul {
+  list-style: none;
+  margin-right: 137px;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+nav {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+nav ul li {
+  padding: 0 10px;
+}
+nav ul li a {
+  color: #fff;
+  font-size: 1.2em; 
+}
+nav ul li a:hover {
+  color: #eeeeee;
+}
+
+.train-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px 10px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+}
+
+.train-info {
+  flex: 1;
+}
+
+.train-name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.train-description {
+  font-size: 16px;
+  margin: 8px 0 0;
+}
+
+.train-image {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  width: 200px; 
+  height: 300px; 
+}
+
+.train-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.train-info h2 {
+  font-size: 3em;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 10px 0;
+}
+
+.footer-content a {
+  color: #1e90ff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
