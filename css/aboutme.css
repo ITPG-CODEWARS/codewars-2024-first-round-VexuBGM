@@ -10,58 +10,57 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
 }
 
 .logo-img {
   height: 80px; 
   width: auto; /* around 137px */
 }
+
 ul {
   list-style: none;
   margin-right: 137px;
 }
+
 a {
   text-decoration: none;
   color: #333;
 }
+
 nav {
   background: #333;
   color: #fff;
   padding: 10px 0;
 }
+
 .nav-container {
   display: flex;
   align-items: center;
   margin: 0 auto;
   padding: 0 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
 }
+
 nav ul {
   display: flex;
   justify-content: center;
   flex-grow: 1;
 }
+
 nav ul li {
   padding: 0 10px;
 }
+
 nav ul li a {
   color: #fff;
   font-size: 1.2em; 
 }
+
 nav ul li a:hover {
   color: #eeeeee;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-.nav-container {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
 }
 
 .nav-container ul {
@@ -98,4 +97,52 @@ body {
 .about-me p {
   color: #666;
   line-height: 1.6;
+}
+
+/* New styles for the layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.text-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 10px 0;
+}
+
+.footer-content a {
+  color: #1e90ff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
 }
