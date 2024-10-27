@@ -17,69 +17,39 @@ body {
   height: 80px; 
   width: auto; /* around 137px */
 }
-
 ul {
   list-style: none;
-  margin-right: 137px;
+  margin-right:137px;
 }
-
 a {
   text-decoration: none;
   color: #333;
 }
-
 nav {
   background: #333;
   color: #fff;
   padding: 10px 0;
 }
-
 .nav-container {
   display: flex;
   align-items: center;
   margin: 0 auto;
   padding: 0 20px;
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
 }
-
 nav ul {
   display: flex;
   justify-content: center;
   flex-grow: 1;
 }
-
 nav ul li {
   padding: 0 10px;
 }
-
 nav ul li a {
   color: #fff;
   font-size: 1.2em; 
 }
-
 nav ul li a:hover {
   color: #eeeeee;
-}
-
-.nav-container ul {
-  list-style: none;
-  padding: 0;
-}
-
-.nav-container ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-.nav-container ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.logo-img {
-  height: 40px;
 }
 
 .about-me {
