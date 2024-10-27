@@ -16,38 +16,48 @@ body {
 .logo-img {
   height: 80px; 
   width: auto; /* around 137px */
+  margin: auto;
 }
+
 ul {
   list-style: none;
-  margin-right:137px;
+  margin-right: 137px;
 }
+
 a {
   text-decoration: none;
   color: #333;
 }
+
 nav {
   background: #333;
   color: #fff;
   padding: 10px 0;
 }
+
 .nav-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
   padding: 0 20px;
 }
+
 nav ul {
   display: flex;
   justify-content: center;
   flex-grow: 1;
 }
+
 nav ul li {
   padding: 0 10px;
 }
+
 nav ul li a {
   color: #fff;
   font-size: 1.2em; 
 }
+
 nav ul li a:hover {
   color: #eeeeee;
 }
@@ -69,7 +79,6 @@ nav ul li a:hover {
   line-height: 1.6;
 }
 
-/* New styles for the layout */
 .container {
   display: flex;
   justify-content: space-between;
@@ -95,7 +104,6 @@ nav ul li a:hover {
   border-radius: 50%;
 }
 
-
 footer {
   background-color: #333;
   color: #fff;
@@ -115,4 +123,46 @@ footer {
 
 .footer-content a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1100px) {
+  .nav-container {
+    justify-content: space-between;
+    padding-right: 0;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+    flex-grow: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-section img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-me {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .text-section, .image-section {
+    padding: 10px;
+  }
+
+  .image-section img {
+    width: 90%;
+  }
 }

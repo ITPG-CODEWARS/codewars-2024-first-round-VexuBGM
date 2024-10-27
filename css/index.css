@@ -35,37 +35,45 @@ body {
     height: 80px; 
     width: auto; /* around 137px */
 }
+
 ul {
     list-style: none;
-    margin-right:137px;
+    margin-right: 137px;
 }
+
 a {
     text-decoration: none;
     color: #333;
 }
+
 nav {
     background: #333;
     color: #fff;
     padding: 10px 0;
 }
+
 .nav-container {
     display: flex;
     align-items: center;
     margin: 0 auto;
     padding: 0 20px;
 }
+
 nav ul {
     display: flex;
     justify-content: center;
     flex-grow: 1;
 }
+
 nav ul li {
     padding: 0 10px;
 }
+
 nav ul li a {
     color: #fff;
     font-size: 1.2em; 
 }
+
 nav ul li a:hover {
     color: #eeeeee;
 }
@@ -79,15 +87,18 @@ nav ul li a:hover {
     text-align: center;
     color: #fff;
 }
+
 .container h1 {
     font-size: 3em;
     margin-bottom: 15px;
 }
+
 .container h4 {
     font-size: 1em;
     margin-bottom: 20px;
     font-style: italic;
 }
+
 .container p {
     font-size: 1.2em;
     margin-bottom: 20px;
@@ -116,7 +127,7 @@ button:hover {
     background-color: #e0e0e0; 
 }
 
-.new-trains h2{
+.new-trains h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,77 +136,124 @@ button:hover {
 }
 
 .train-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: all 0.5s ease;
 }
 
 .train {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  padding: 20px;
-  width: 30%;
-  box-sizing: border-box;
-  text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    flex: 1;
+    transition: transform 0.5s ease, flex 0.5s ease;
 }
 
 .train img {
-  max-width: 100%;
-  height: 340px;
-  border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    border-radius: 8px;
 }
 
 .train h3 {
-  margin-top: 15px;
-  font-size: 1.5em;
+    margin-top: 15px;
+    font-size: 1.5em;
 }
 
 .train p {
-  font-size: 1em;
-  line-height: 1.5;
-  padding: 20px;
-}
-
-.train-container {
-  display: flex;
-  justify-content: space-around;
-  transition: all 0.5s ease;
-}
-
-.train {
-  flex: 1;
-  margin: 10px;
-  transition: transform 0.5s ease, flex 0.5s ease;
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 20px;
 }
 
 .train button {
-  background-color: #fff;
-  padding: 50px 130px;
-  font-size: 1.5em;
-}.train button:hover {
-  background-color: #e0e0e0;
+    background-color: #fff;
+    padding: 50px 130px;
+    font-size: 1.5em;
+}
+
+.train button:hover {
+    background-color: #e0e0e0;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .footer-content p {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
 .footer-content a {
-  color: #1e90ff;
-  text-decoration: none;
-  margin: 0 5px;
+    color: #1e90ff;
+    text-decoration: none;
+    margin: 0 5px;
 }
 
 .footer-content a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .train {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+  .train-container {
+    flex-direction: column;
+  }  
+  .train {
+        width: 100%;
+    }
+
+    .train button {
+        padding: 20px 50px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    justify-content: space-between;
+    padding-right: 0;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+    flex-grow: 0;
+  }
+  
+  .container h1 {
+        font-size: 2em;
+    }
+
+    .container h4 {
+        font-size: 0.8em;
+    }
+
+    .container p {
+        font-size: 1em;
+    }
+
+    .train img {
+        height: auto;
+    }
+
+    .train button {
+        padding: 30px 60px;
+        font-size: 1.5em;
+    }
 }
